@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>wedding invitation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Kufam&family=Noto+Nastaliq+Urdu:wght@700&family=Readex+Pro:wght@700&family=Sevillana&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./site.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <section class='container-a'>
+      <div class="circle-flower">
+        <h1>
+          <span>مُنذِر</span> 
+          <strong>&</strong>
+          <span>أليسار</span> 
+        </h1>
+      </div>
+      <div class="home-text">
+        <p> . . . لو جاتلك الدعوة دى فتأكد </p>
+        <p>🌹 إنك شخص مميز جداً بالنسبالنا </p>
+        <p>وعشان كدا حبين نقولك </p>
+      </div>
+      <button>إضغط هنا</button>
+    </section>
+
+    <section class="container-b hide">
+      <div class="images">    
+        <img class="img5" src="./images/774832.png" alt="flower">
+        <img class="img3" src="./images/185801.png" alt="flower">
+        <img class="img1" src="./images/2926754.png" alt="flower">
+        <img class="img2" src="./images/3157482.png" alt="flower">
+        <img class="img4" src="./images/3025015.png" alt="flower">
+
+      </div>
+      <div class='top'>
+        <p>بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ</p>
+        <p>وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا</p>
+        <p>لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً</p>
+      </div>
+      <div class="top-b">
+        <p>وإن السرور إذا تشارك ضُوعفت</p>
+        <p>🌺🌸 بسماته مع زمرة الأحبه</p>
+      </div>
+      <p class="line">❀ ❀ ❀</p>
+      <div class="midle">
+        <p>بكل حُب تتشرف عائلة </p>
+        <p>أحمد هرموش <span>و</span> عارف محمد</p>
+        <p>بدعوتكم لحضور حفل زفاف </p>
+      </div>
+      <p class="name">
+        ❀
+        <span>مُنذِر</span> 
+          <strong>&</strong>
+          <span>أليسار</span> 
+          ❀
+      </p>
+      <div class="date">
+        <p>21/01/2023</p>
+        <p>❤️️</p>
+        <p>AT 5.00 PM</p>
+      </div>
+      <p class="place"><img src='./images/535188.png' >Freizeitzentrum, Landstraße 9 <br>, 38667 Bad Harzburg</p>
+      <p class="last-line">♥ بحضوركم تكتمل فرحتنا ♥</p>
+    </section>
+
+    <script>
+      const button = document.querySelector('button');
+
+      button.addEventListener('click', () => {
+        const firstCon = document.querySelector('.container-a');
+        const lastCon = document.querySelector('.container-b');
+
+        firstCon.classList.toggle('hide');
+        lastCon.classList.toggle('hide');
+      })
+    </script>
+  </body>
+</html>

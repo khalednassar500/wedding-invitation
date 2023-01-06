@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh; 
+  color: #303841;
+  font-family: 'Readex Pro', sans-serif;
+  background-image: radial-gradient(#fff,#fff,#fff, rgba(224, 255, 255, 0.5), rgba(255, 192, 203, 0.3));
+  background-attachment: fixed;
+  position: relative;
+}
+.container-a ,
+.container-b {
+  width: 400px;  
+  border: 4px dashed lightgray;
+  text-align: center;
+  padding: 40px 0;
+  background-color: #fff;
+  margin: 10px auto;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.container-b {
+  padding-top: 0;
+  z-index: -1;
+}
+.hide {
+  opacity: 0;
+  transition: 0.5s ease-out;
+}
+.circle-flower {
+  background-image: url('./images/circular-flowers-ornamental-frame.png');
+  background-size: 100%;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  transform: rotate(-45deg);
+  margin-bottom: 40px;
+}
+h1 {
+  transform: rotate(40deg);
+  font-family: 'Noto Nastaliq Urdu', serif;
+  font-size: 2em;
+}
+h1 strong {
+  color:  darkgray;
+  font-family: 'Sevillana', cursive;
+  display: block;
+  margin: -5px auto -15px auto;
+}
+h1 span:last-child {
+  position: relative;
+  top: -15px;
+}
+.home-text {
+  font-size: 1.5em;
+  line-height: 35px;
+}
+button {
+  font-size: 1.3em;
+  border: 0;
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  font-family: 'Readex Pro', sans-serif;
+  color: gray;
+}
+button:hover {
+  color: #fff;
+  background-color: gray;
+  transition: 0.5s;
+}
+.top {
+  font-family: 'Aref Ruqaa', serif;
+  font-size: 1.5em;
+  color: #1a535c;
+}
+.top p:first-child {
+  margin-bottom: 10px;
+}
+.top-b {
+  font-family: 'Kufam', sans-serif;
+  margin-top: 25px;
+  color: gray;
+  font-size: 1.5em;
+}
+.line {
+  margin: 25px 0;
+}
+.midle  {
+  line-height: 30px;
+  font-size: 1.3em;
+  color: #1a535c;
+}
+.midle span {
+  display: inline-block;
+  margin: 0 25px;
+  color: #4ecdc4;
+}
+.midle p:first-child,
+.midle p:last-child {
+  color: #4ecdc4;
+}
+.name {
+  font-size: 1.5em;
+  margin: 25px 0 40px 0;
+  color: #1a535c;
+}
+.date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Kufam', sans-serif;
+}
+.date p:nth-child(2) {
+  margin: 0 20px;
+}
+.date p:not(:nth-child(2)) {
+  border-top: 2px solid #4ecdc4;
+  border-bottom: 2px solid #4ecdc4;
+  padding: 5px;
+}
+.place {
+  margin-top: 20px;
+  font-family: 'Kufam', sans-serif;
+
+}
+.place img {
+  width: 25px;
+  margin: 0 5px -10px 0;
+}
+.last-line {
+  margin-top: 20px;
+
+}
+.images {
+  overflow: hidden;
+  display: flex;
+  margin:  0 auto 20px auto;
+}
+.img1 {
+  width: 80px;
+  z-index: 1;
+  position: relative;
+}
+.img2 {
+  width: 80px;
+  position: relative;
+  top: -20px;
+  left: -25px;
+  z-index: 0;
+}
+.img3 {
+  width: 80px;
+  position: relative;
+  top: -20px;
+  right: -20px;
+ }
+ .img4 {
+  width: 80px;
+  position: relative;
+  top: -10px;
+  z-index: 0;
+  left: -40px;
+ }
+ .img5 {
+  width: 80px;
+  position: relative;
+  top: -10px;
+  right: -40px;
+ }
+
+ @media screen and (max-width: 376px) {
+  .container-a ,
+  .container-b {
+    width: 350px;  
+  }
+  .home-text {
+    font-size: 1.2em;
+  }
+  button  {
+    font-size: 1.2em
+  }
+ }
